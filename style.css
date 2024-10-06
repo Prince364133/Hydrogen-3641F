@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+* {
+  transition: all 0.4s ease;
+}
+
+html {
+  background: linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  color: #2c3e50;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+h2 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  margin-top: 100px;
+  background: #2c3e50;
+  outline: 0;
+  height: 6px;
+  border: none;
+}
+
+.ane_wrapper,
+.ene_wrapper,
+.yne_wrapper {
+  width: 33.33vw;
+  position: absolute;
+  height: 100vh;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+.ane_wrapper span,
+.ene_wrapper span,
+.yne_wrapper span {
+  vertical-align: sub;
+  font-size: smaller;
+}
+.ane_wrapper div,
+.ene_wrapper div,
+.yne_wrapper div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+  width: 200px;
+}
+.ane_wrapper #names,
+.ene_wrapper #names,
+.yne_wrapper #names {
+  top: 35%;
+}
+.ane_wrapper.active,
+.ene_wrapper.active,
+.yne_wrapper.active {
+  height: 33.33vh;
+  position: relative;
+  margin: 0;
+  width: 100vw;
+}
+
+.ane_wrapper {
+  left: 0;
+}
+
+.ene_wrapper {
+  left: 0;
+  margin: auto;
+  right: 0;
+}
+
+.yne_wrapper {
+  right: 0;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 80%;
+  top: 35%;
+  left: 30px;
+  position: absolute;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 6px solid #2c3e50;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background: linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -16px;
+}
+input[type=range]::-webkit-slider-thumb:active {
+  transform: scale(0.9);
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 30px #2c3e50;
+  background: #2c3e50;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
